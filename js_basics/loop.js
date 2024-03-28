@@ -61,22 +61,49 @@ const coding = ["php","js","c++","c","java"];
 // })
 
 
-const mycoding = [
-    {
-        languageName:"javaScript",
-        fileName : "js"
-    },
-    {
-        languageName:"C++",
-        fileName : "c++"
-    },
-    {
-        languageName:"java",
-        fileName : "java"
-    }
-]
+// const mycoding = [
+//     {
+//         languageName:"javaScript",
+//         fileName : "js"
+//     },
+//     {
+//         languageName:"C++",
+//         fileName : "c++"
+//     },
+//     {
+//         languageName:"java",
+//         fileName : "java"
+//     }
+// ]
 
 
-mycoding.forEach((item) => {
-    console.log(item.languageName);
-})
+// mycoding.forEach((item) => {
+//     console.log(item.languageName);
+// })
+
+//for each loop can't return anything
+// so use filter
+const nums = [1,2,3,4,5,6,7,8,9];
+// const numsdata = nums.filter((val) => (val>4))
+// console.log(numsdata);
+
+// const newnum = [];
+// nums.forEach((val)=>{
+//     if(val>4) newnum.push(val);
+// })
+// console.log(newnum);
+// console.log(nums);
+
+// const newnums = nums.map((num) => num+10);
+// console.log(nums);
+// console.log(newnums);
+
+
+//chaining
+
+// const newnum = nums.map((val) => val*10).map((val)=>val+1).filter((val) => val>50);
+// console.log(newnum);
+
+
+const sum = nums.reduce((accumulator,val) => accumulator+val,0);
+console.log(sum);
