@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color:white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+     <div class="parent">
+        <div class="class">Monday</div>
+        <div class="class">Tuesday</div>
+        <div class="class">Wednesday</div>
+        <div class="class">Thursday</div>
+     </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    parent.children[0].style.color = "red";
+    console.log(parent.childNodes)
+</script>
+</html>
